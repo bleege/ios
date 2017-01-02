@@ -40,4 +40,14 @@ class TangramVC:  MapViewController{
     }
     */
 
+    //MARK: - TGRecognizerDelegate
+    func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, shouldRecognizeSingleTapGesture location: CGPoint) -> Bool {
+        debugPrint("shouldRecognizeSingleTapGesture called.")
+        return true
+    }
+    
+    func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeSingleTapGesture location: CGPoint) {
+        debugPrint("didRecognizeSingleTapGesture called.")
+    }
+    
 }

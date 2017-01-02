@@ -148,15 +148,6 @@ public class MapViewController: TGMapViewController, LocationManagerDelegate, TG
     }
 
     //MARK: - TGRecognizerDelegate
-
-    public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, shouldRecognizeSingleTapGesture location: CGPoint) -> Bool {
-        debugPrint("shouldRecognizeSingleTapGesture called.")
-        return true
-    }
-    
-    public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeSingleTapGesture location: CGPoint) {
-        debugPrint("didRecognizeSingleTapGesture called.")
-    }
     
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeDoubleTapGesture location: CGPoint) {
         debugPrint("didRecognizeDoubleTapGesture called.")
