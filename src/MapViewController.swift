@@ -150,31 +150,35 @@ public class MapViewController: TGMapViewController, LocationManagerDelegate, TG
     //MARK: - TGRecognizerDelegate
 
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeSingleTapGesture location: CGPoint) {
-        
+        debugPrint("didRecognizeSingleTapGesture called.")
     }
     
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeDoubleTapGesture location: CGPoint) {
-        
+        debugPrint("didRecognizeDoubleTapGesture called.")
     }
     
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeLongPressGesture location: CGPoint) {
-        
+        debugPrint("didRecognizeLongPressGesture called.")
     }
     
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizePanGesture location: CGPoint) {
+        debugPrint("didRecognizePanGesture called.")
         shouldFollowCurrentLocation = false
         findMeButton.selected = false
     }
     
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizePinchGesture location: CGPoint) {
+        debugPrint("didRecognizePinchGesture called.")
         
     }
     
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeRotationGesture location: CGPoint) {
+        debugPrint("didRecognizeRotationGesture called.")
         
     }
     
     public func mapView(view: TGMapViewController, recognizer: UIGestureRecognizer, didRecognizeShoveGesture displacement: CGPoint) {
+        debugPrint("didRecognizeShoveGesture called.")
         
     }
 
